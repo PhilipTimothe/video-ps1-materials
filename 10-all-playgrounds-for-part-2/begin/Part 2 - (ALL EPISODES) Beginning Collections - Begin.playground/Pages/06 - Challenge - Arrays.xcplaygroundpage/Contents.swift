@@ -15,7 +15,11 @@
 var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
 
 // TODO: Write solution here
-
+players.count
+players.contains("Charles")
+players.first
+//if players.first != nil {}
+players.last
 
 /*:
  ## Challenge 2
@@ -27,8 +31,11 @@ var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
  */
 
 // TODO: Write solution here
-
-
+players.insert("Charles", at: 2)
+//players.append("")
+//players[5...] = ["Gloria", "Hermione"]
+players += ["Gloria", "Hermione"]
+print(players)
 /*:
  ## Challenge 3
  
@@ -36,6 +43,7 @@ var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
  */
 
 // TODO: Write solution here
-
+let teamOne = Array(players[4...7])
+print(teamOne)
 
 //: [Next](@next)
