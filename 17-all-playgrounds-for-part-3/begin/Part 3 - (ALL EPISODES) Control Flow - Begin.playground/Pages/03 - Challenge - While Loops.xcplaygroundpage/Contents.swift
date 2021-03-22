@@ -14,7 +14,12 @@
  
  Explain why the final value of `count` and the value in the last line printed out are different.
  */
+var count = 1
 
+while count <= 9 {
+  print("Counting up: \(count)")
+  count += 1
+}
 
 
 
@@ -31,10 +36,10 @@
  What are three different loop conditions you could use with this loop, and get the same result?
  
  */
-
-
-
-
+repeat {
+  print("Counting down: \(count)")
+  count -= 1
+} while count >= 0
 
 /*:
  
@@ -56,8 +61,14 @@
  
  Set the loop condition so that the repeat while loop finishes when the first 6 is rolled.
  */
+var rollCount = 0
+var roll = 0
 
-
+repeat {
+  roll = Int.random(in: 1...6)
+  rollCount += 1
+  print("Roll \(rollCount) gives you a \(roll)")
+} while roll != 6
 
 
 
