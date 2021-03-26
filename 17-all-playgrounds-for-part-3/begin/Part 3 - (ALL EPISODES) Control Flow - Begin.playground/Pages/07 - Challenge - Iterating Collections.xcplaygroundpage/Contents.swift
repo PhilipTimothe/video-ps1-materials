@@ -19,6 +19,20 @@
 
 var pastries: [String] = ["cookie", "danish", "cupcake", "donut", "pie", "brownie", "fritter", "cruller"]
 
+//for pastry in 0..<pastries.count {
+////  print(pastries[pastry])
+//  if pastries[pastry.startIndex] == "c" {
+////    print("\(pastries[i])")
+//  }
+//}
+
+//var sum = 0
+for pastry in pastries {
+//  print(pastry)
+  if pastry[pastry.startIndex] == "c" {
+    print(pastry)
+  }
+}
 
 
 /*:
@@ -33,7 +47,9 @@ var pastries: [String] = ["cookie", "danish", "cupcake", "donut", "pie", "browni
  
  Your output should be the same as in Challenge 1.
  */
-
+for pastry in pastries where pastry[pastry.startIndex] == "d" {
+  print(pastry)
+}
 
 
 //: [⇒ Next: 08 - Nested Loops and Early Exit](@next)
