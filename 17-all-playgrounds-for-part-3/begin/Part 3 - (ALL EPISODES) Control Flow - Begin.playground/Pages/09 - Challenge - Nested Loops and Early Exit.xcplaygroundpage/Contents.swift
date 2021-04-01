@@ -53,10 +53,17 @@ for _ in 1...5 {
 
 var pastries: [String] = ["cookie", "danish", "cupcake", "donut", "pie", "brownie", "fritter", "cruller"]
 
+//for pastry in pastries {
+//  if pastry.count <= 5 {
+//    print(pastry)
+//  }
+//}
+
 for pastry in pastries {
-  if pastry.count <= 5 {
-    print(pastry)
+  if pastry.count > 5 {
+    continue
   }
+  print(pastry)
 }
 
 /*:
@@ -77,4 +84,7 @@ for i in 0..<daysOfTheWeek.count {
     continue
   }
   print(daysOfTheWeek[i])
+  if daysOfTheWeek[i] == "Friday" {
+    break
+  }
 }
