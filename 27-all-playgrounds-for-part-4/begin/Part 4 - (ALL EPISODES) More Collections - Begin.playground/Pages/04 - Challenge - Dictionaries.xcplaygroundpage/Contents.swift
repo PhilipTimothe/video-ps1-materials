@@ -15,6 +15,10 @@
  As part of the initialization, assign each of those keys a value that corresponds to your own personal information.
  
  */
+var person = ["Name": "Philip",
+              "Profession": "Software Engineer",
+              "Country": "USA",
+              "City": "New York"]
 
 
 /*:
@@ -28,7 +32,9 @@
  - Add a `state` key to the dictionary and assign it the value `Ohio`
  
  */
-
+person["City"] = "Cleveland"
+person["State"] = "Ohio"
+print(person)
 
 /*:
  
@@ -41,7 +47,9 @@
  
  */
 
-
+person["City"] = nil
+person.removeValue(forKey: "State")
+print(person)
 
 /*:
  
@@ -51,7 +59,9 @@
  
  */
 
-
+for (info, detail) in person {
+  print("Candidates \(info) is \(detail)")
+}
 
 
 
