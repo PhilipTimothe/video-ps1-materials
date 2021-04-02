@@ -36,7 +36,12 @@ animalPets.insert("🦉 Owl")
  
  
  */
+let unionSets = mythicalPets.union(animalPets)
+print(unionSets)
 
+for set in unionSets {
+  print(set)
+}
 
 
 /*:
@@ -46,7 +51,8 @@ animalPets.insert("🦉 Owl")
  Use the `.intersection()` method to find out which pets exist in both `mythicalPets` and `animalPets`. Print the resulting set to the console.
  
  */
-
+let intersect = mythicalPets.intersection(animalPets)
+print(intersect)
 
 
 /*:
@@ -56,7 +62,7 @@ animalPets.insert("🦉 Owl")
  The only pet in these two sets that actually exists in real life is "Mango". Remove her from the appropriate set with the `.remove()` method and capture the removed element in a constant named `removedPet`.
  
  */
-
+let removePet = animalPets.remove("🐶 Mango")
 
 /*:
  
@@ -67,5 +73,6 @@ animalPets.insert("🦉 Owl")
  Print the new `mythicalPets` set to the console to check your work.
  
  */
-
+mythicalPets.formUnion(animalPets)
+print(mythicalPets)
 
